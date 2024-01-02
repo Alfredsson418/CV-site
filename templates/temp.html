@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        {% if title %}
+            <title>CV - {{ title }}</title>
+        {% else %}
+            <title>CV</title>
+        {% endif %}
+        <link rel="icon" type="images/x-icon" href={{ url_for('static', filename='favicon/favicon.ico') }}>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/nav.css') }}"">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}"">
+    </head>
+    <body>
+        <div class="web-title-container title-text-border" >
+            <h1>Oskar Alfredsson</h1>
+        </div>
+
+
+        <dl>
+            <dt><a href="{{ url_for('index') }}">Hem</a></dt>
+
+            <dt><a href="{{ url_for('project') }}">Projekt</a></dt>
+            
+            <dd><dt><a href="{{ url_for('socials') }}">Sociala Medier</a></dt>
+            <dd><a>- LinkedIn</a></dd>
+            <dd><a>- GitHub</a></dd>
+
+        </dl>
+
+        {% block content %}
+        {% endblock %}
+        
+
+    </body>
+</html>

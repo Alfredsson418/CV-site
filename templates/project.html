@@ -1,0 +1,25 @@
+{% extends "temp.html" %}
+{% block content %}
+
+    <div class="web-margin-left">
+        <div class="title-container">
+            <h1>Projekt</h1>
+        </div>
+
+    {% for project in projects %}    
+        <hr>
+            
+        <a href="{{ url_for('projectPage', projectTitle=project.title) }}" class="project-text">
+                <div class="project" style="background-color: {{ project.color }};">
+                    
+                        <h3>{{ project.title }}</h3>
+                        <p>{{ project.p }}</p>
+                        <p style="float:right ; margin-top:-3em; font-size:110% ;">{{ project.done }}</p>
+                    
+                </div>
+        </a>
+
+    {% endfor %}
+
+    </div>
+{% endblock content %}

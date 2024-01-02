@@ -1,0 +1,12 @@
+document.write("<dl>");
+document.write("<dt><a href=\"index.html\">Hem<\/a><\/dt>");
+document.write("");
+document.write("<dt><a href=\"project.html\">Projekt<\/a><\/dt>");
+document.write("<dd><a>- Websidor<\/a><\/dd>");
+document.write("");
+document.write("<dt><a href=\"socials.html\">Sociala Medier<\/a><\/dt>");
+document.write("<dd><a>- LinkedIn<\/a><\/dd>");
+document.write("<dd><a>- GitHub<\/a><\/dd>");
+document.write("            ");
+document.write("            ");
+document.write("<\/dl>");
