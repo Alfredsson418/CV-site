@@ -1,0 +1,21 @@
+{% extends "head.html" %}
+{% block content %}
+
+    <h2>Projekt</h2>
+    <p class="descriptiv-text" >Här är olika projekt som jag har jobbat på</p>
+
+    
+    <div class="project-page" >
+    {% for project in projects %}  
+        
+        <a href="{{ project.github }}"  style="background-color: {{ project.color }};">
+            <div class="project-box">
+                <p class="project-box-text-over">{{ project.title }}</p>
+                <p class="project-box-text-under">{{ project.p }}</p>
+            </div>
+        </a>
+    {% endfor %}
+    </div>
+
+{% endblock content %}
+

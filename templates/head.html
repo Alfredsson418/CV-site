@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        {% if title %}
+            <title>Alfredsson - {{ title }}</title>
+        {% else %}
+            <title>Alfredsson</title>
+        {% endif %}
+        <link rel="icon" type="images/x-icon" href="{{ url_for('static', filename='favicon/favicon.ico') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/box.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/body.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/general-text.css') }}">
+
+        
+    </head>
+    <body>
+
+        <div class="menu-box">
+            <div class="menu-grid">
+                <a href="{{ url_for('index') }}" class="menu-item"><p >Hem</p></a>
+                <a href="{{ url_for('project') }}" class="menu-item"><p >Projekt</p></a>
+                <a href="{{ url_for('socials') }}" class="menu-item"><p >Kontakt</p></a>
+            </div>
+
+        </div>
+
+        {% block content %}
+        {% endblock %}
+        
+
+    </body>
+</html>

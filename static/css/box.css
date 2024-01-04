@@ -1,0 +1,38 @@
+
+.project-page {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 1rf;
+    
+    
+    
+    
+    
+}
+
+
+.project-box {
+    
+    padding: 2em; 
+    
+}
+
+.project-box-text-over {
+
+    text-align: center;
+    color: aliceblue;
+    font-size: 1.5em;
+    font-weight: bolder;
+    text-decoration: none;
+    
+
+}
+
+
+.project-box-text-under {
+    text-align: center;
+    font-weight: bold;
+    color: aliceblue;
+    text-decoration: none;
+
+}
