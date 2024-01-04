@@ -12,23 +12,33 @@
         <link rel="stylesheet" href="{{ url_for('static', filename='css/box.css') }}">
         <link rel="stylesheet" href="{{ url_for('static', filename='css/body.css') }}">
         <link rel="stylesheet" href="{{ url_for('static', filename='css/general-text.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/images.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/blog.css') }}">
 
         
     </head>
     <body>
 
-        <div class="menu-box">
-            <div class="menu-grid">
+        <div class="menu-box-top menu-box">
+            <div class="grid-4xn">
                 <a href="{{ url_for('index') }}" class="menu-item"><p >Hem</p></a>
                 <a href="{{ url_for('project') }}" class="menu-item"><p >Projekt</p></a>
                 <a href="{{ url_for('socials') }}" class="menu-item"><p >Kontakt</p></a>
+                <a href="{{ url_for('about') }}" class="menu-item"><p >Om mig</p></a>
             </div>
-
         </div>
 
         {% block content %}
         {% endblock %}
         
+        <div class="menu-box menu-box-bottom ">
+            <div class="grid-3xn">
+                <p class="menu-item">www.alfredsson.xyz</p>
+                <p class="menu-item"></p>
+                <p class="menu-item">Copyright (c) 2024 Oskar Alfredsson</p>
+            </div>
+        </div>
+
 
     </body>
 </html>

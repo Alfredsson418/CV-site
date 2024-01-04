@@ -1,0 +1,51 @@
+:root{
+    --blog-border-witdh: 2px;
+    --max-post-heigth: 400px;
+    --blog-border-radius: 10px;
+}
+
+.blog-post {
+    
+    margin-left: auto;
+    margin-right: auto;
+    border-color: black;
+    border-width: var(--blog-border-witdh);
+    border-radius: var(--blog-border-radius);
+    border-style: solid;
+    margin-top: 2em;
+    width: 85%;
+    max-height: var(--max-post-heigth);
+    
+}
+
+.blog-grid {
+    display: grid;
+    grid-template-columns:auto auto;
+    grid-auto-rows: 1fr;
+}
+
+.blog-image {
+    text-align: right;
+}
+
+.blog-image-size {
+    max-height: var(--max-post-heigth);
+    border-top-right-radius: var(--blog-border-radius);
+    border-bottom-right-radius: var(--blog-border-radius);
+    border-left-color: black;
+    border-left: solid;
+    border-width: var(--blog-border-witdh);
+}
+
+.blog-title {
+
+    text-align: center;
+    
+
+}
+
+.blog-text {
+
+    
+
+}

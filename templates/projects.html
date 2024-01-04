@@ -2,16 +2,19 @@
 {% block content %}
 
     <h2>Projekt</h2>
-    <p class="descriptiv-text" >Här är olika projekt som jag har jobbat på</p>
+    <p class="descriptiv-text" >
+        Här är olika projekt som jag har jobbat på. <br>
+        Klicka på dem för att gå till deras projektsida.
+    </p>
 
     
-    <div class="project-page" >
+    <div class="grid-3xn" >
     {% for project in projects %}  
         
-        <a href="{{ project.github }}"  style="background-color: {{ project.color }};">
-            <div class="project-box">
-                <p class="project-box-text-over">{{ project.title }}</p>
-                <p class="project-box-text-under">{{ project.p }}</p>
+        <a href="{{ project.github }}"  style="background-color: {{ project.color }};" class="grid-href">
+            <div class="grid-box">
+                <p class="grid-box-text-over">{{ project.title }}</p>
+                <p class="grid-box-text-under">{{ project.p }}</p>
             </div>
         </a>
     {% endfor %}

@@ -1,28 +1,48 @@
+:root{
+    --left: 15%;
+    --right: 15%;
+}
+
 body {
     margin: 0;
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: var(--left);
+    margin-right: var(--right);
     font-family:sans-serif;
 }
 
 .menu-box {
     height: 3em;
-    background-color: aliceblue;
+    background-color: white;
     border-width: 1px;
-    border-top-width: 0;
     border-style: solid;
     border-color: rgba(0, 0, 0, 0.351);
+    
+    
+    
+}
+
+.menu-box-top {
+    border-top-width: 0;
     border-bottom-left-radius: 0.3em;
     border-bottom-right-radius: 0.3em;
-    margin-bottom: 3em;
+    margin-bottom: 5em;
     
 }
-.menu-grid {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    padding-top: 0.3em;
+
+.menu-box-bottom {
+    height: 8em;
+    margin-top: 5em;
+    border-bottom-width: 0;
+    border-top-left-radius: 0.3em;
+    border-top-right-radius: 0.3em;
+    position: static;
+    bottom: 0;
+    margin-bottom: 0;
+    left: var(--left);
+    right: var(--right);
     
 }
+
 
 .menu-item {
     margin-left:auto;

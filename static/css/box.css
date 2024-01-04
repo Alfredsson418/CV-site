@@ -1,38 +1,38 @@
 
-.project-page {
+.grid-3xn {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: 1rf;
-    
-    
-    
-    
-    
 }
 
+.grid-4xn {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 1rf;
+}
 
-.project-box {
-    
+.grid-box {
     padding: 2em; 
-    
 }
 
-.project-box-text-over {
-
+.grid-box-text-over {
     text-align: center;
     color: aliceblue;
     font-size: 1.5em;
     font-weight: bolder;
-    text-decoration: none;
-    
-
 }
 
 
-.project-box-text-under {
+.grid-box-text-under {
     text-align: center;
     font-weight: bold;
     color: aliceblue;
-    text-decoration: none;
+}
 
+.grid-href {
+    text-decoration:none;
+}
+
+.grid-href a:hover {
+    text-decoration-thickness: 5px;
 }
