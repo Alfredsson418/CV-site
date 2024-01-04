@@ -2,8 +2,8 @@
 
 # What you need
 projects.py file where you store your projects and info about them, for an example:
-
-'projects = [
+```
+projects = [
 
 		{
 	   'title': 'Website',
@@ -13,4 +13,4 @@ projects.py file where you store your projects and info about them, for an examp
 	   'done' : 'Ongoing'
 	}
 ]
-'
+```
