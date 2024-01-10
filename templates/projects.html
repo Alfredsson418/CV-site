@@ -11,10 +11,10 @@
     <div class="grid-3xn" >
     {% for project in projects %}  
         
-        <a href="{{ project.github }}"  style="background-color: {{ project.color }};" class="grid-href">
+        <a href=""  style="background-color: {{ project[1] }};" class="grid-href">
             <div class="grid-box">
-                <p class="grid-box-text-over">{{ project.title }}</p>
-                <p class="grid-box-text-under">{{ project.p }}</p>
+                <p class="grid-box-text-over">{{ project[2] }}</p>
+                <p class="grid-box-text-under">{{ project[3] }}</p>
             </div>
         </a>
     {% endfor %}

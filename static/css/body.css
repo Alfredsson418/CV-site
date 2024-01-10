@@ -12,12 +12,10 @@ body {
 
 .menu-box {
     height: 3em;
-    background-color: white;
+    background-color: rgb(32, 32, 32);
     border-width: 1px;
     border-style: solid;
     border-color: rgba(0, 0, 0, 0.351);
-    
-    
     
 }
 
@@ -51,7 +49,7 @@ body {
     text-align: center;
     font-weight: bold;
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 a:hover {

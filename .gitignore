@@ -1,5 +1,7 @@
 gunicorn.conf.py
 projects.py
+db/*.db
+static/images/blogImages/*
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

@@ -1,7 +1,8 @@
 :root{
-    --blog-border-witdh: 2px;
+    --blog-border-width: 2px;
     --max-post-heigth: 400px;
     --blog-border-radius: 10px;
+    --max-image-width: 375px;
 }
 
 .blog-post {
@@ -9,12 +10,14 @@
     margin-left: auto;
     margin-right: auto;
     border-color: black;
-    border-width: var(--blog-border-witdh);
+    border-width: var(--blog-border-width);
     border-radius: var(--blog-border-radius);
     border-style: solid;
     margin-top: 2em;
     width: 85%;
     max-height: var(--max-post-heigth);
+    background-color: black;
+    color: aliceblue;
     
 }
 
@@ -28,17 +31,30 @@
     text-align: right;
 }
 
+.blog-cell {
+
+    margin: 10%;
+
+}
+
+.blog-line {
+    width: auto;
+    background-color: white;
+
+}
+
 .blog-image-size {
     max-height: var(--max-post-heigth);
+    max-width: var(--max-image-width);
     border-top-right-radius: var(--blog-border-radius);
     border-bottom-right-radius: var(--blog-border-radius);
     border-left-color: black;
     border-left: solid;
-    border-width: var(--blog-border-witdh);
+    border-width: var(--blog-border-width);
 }
 
 .blog-title {
-
+    margin-top: 0em;
     text-align: center;
     
 

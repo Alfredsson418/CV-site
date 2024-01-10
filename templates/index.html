@@ -1,20 +1,21 @@
 {% extends "head.html" %}
 {% block content %}
 
-    
-
     <h1>Nyheter</h1>
-    <div class="blog-post">
-        <div class="blog-grid">
-            <div style="margin:10%;">
-                <h3 class="blog-title" >Webbsida</h3>
-                <p class="blog-text">Välkommen till min nya hemsida, här kan du hitta olika projekt som jag har byggt själv eller tilsammans med andra</p>
-            </div>
-            <div class="blog-image">
-                <img class="blog-image-size" src="{{ url_for('static', filename='images/me-small-333x458.JPG') }}">
+    {% for post in blog %}
+        <div class="blog-post" style="background-color: {{ post[1] }};">
+            <div class="blog-grid">
+                <div class="blog-cell">
+                    <h3 class="blog-title" >{{ post[2] }}</h3>
+                    <hr class="blog-line">
+                    <p class="blog-text">{{ post[3] }}</p>
+                </div>
+                <div class="blog-image">
+                    <img class="blog-image-size" src="{{ post[5] }}" alt="{{ post[6] }}">
+                </div>
             </div>
         </div>
-    </div>
+    {% endfor %}
     
 
 {% endblock content %}
